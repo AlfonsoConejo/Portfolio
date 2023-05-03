@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #edf0f1; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1f2127;
+}
+
+.inicio{
+    padding:  0 20px;
+}
+
+.inicio .contenido{
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    border-radius: 30px;
+    padding: 20px 0;
+    background-color: #313338;
+}
+
+
+.inicio .fila .col-2{
+    width: 70%;
+}
+
+.inicio .fila .col-1{
+    min-width: 300px;
+    width: 30%;
+}
+
+.inicio .fila .col-2 h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.inicio .fila .col-2 span{
+    color: #3456d8;
+}
+
+.inicio .fila .col-2 p{
+    margin-bottom: 20px;
+    margin-right: 25px;
+    text-align: justify;
+    font-size: 1.4em;
+}
+
+.inicio .fila .col-1 .contenedor-img{
+    max-width: 400px;
+    width: 250px;
+    margin: auto;
+}
+.inicio .fila .col-1 .contenedor-img img{
+    width: 100%;
+    border:solid;
+    border-width: 5px;
+    border-color: #3456d8;
+    border-radius: 50%; 
+}
+
+.inicio .experience{
+    font-size: 1em;   
+}
+
+.inicio .projects{
+    font-size: 1em;   
+}
+
+.tools-card{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tool-logo img{
+    width: 100px;
+}
+
+.tool-logo .js-logo, .sqlserver-logo{
+    border-radius: 50%;
+}
+
+.contact-info{
+    font-size: 1rem;
+}
+
+.content-group{
+    padding-top: 35px;
+}
+.section-title{
+    text-align: center;
+}
+
+.experience-cards{
+    margin-top: 20px;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-cards p {
+    text-align: justify;
+    hyphens: auto;
+  }
+
+.col-exp{
+    width: 49%;
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+    background-color: #313338;
+}
+
+.exp-image{
+    width: 200px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.exp-image img{
+    width: 100%;
+    border-radius: 20px; 
+}
+.experience-cards .description{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.description h2{
+    padding-top: 20px;
+}
+
+.description .job-description{
+    padding-top: 20px;
+    height: 40%;
+}
+
+.description .period{
+    padding-top: 20px;
+}
+

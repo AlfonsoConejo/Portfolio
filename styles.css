@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600&display=swap');
-root {
+html:root {
+    font-size: 16px;
     --font-h2: 2rem;
     --font-hero-text: 1.4rem;
+    --min-width: 420px;
 }
 
 *{
@@ -33,13 +35,13 @@ img{
 
 .wrapper{
     max-width: 1100px;
+    min-width: var(--min-width);
     margin: auto;
     color: #fff;
 }
 
 .container-hero{
     display: flex;
-    min-width: 420px;
     margin-top: 50px;
     border-radius: 30px;
     padding: 20px 0;
@@ -58,7 +60,6 @@ img{
 }
 
 .photo-column-hero .photo-container{
-    /* max-width: 400px; */
     width: 250px;
     margin: auto;
 }
@@ -141,13 +142,6 @@ img{
     }
 
 }
-/* .inicio .experience{
-    font-size: 1em;   
-}
-
-.inicio .projects{
-    font-size: 1em;   
-}
 
 .tools-card{
     display: flex;
@@ -156,15 +150,7 @@ img{
     align-items: center;
 }
 
-/* @media (max-width: 750px){
-    .tools-card{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-        gap: 20px;
-    }
-} */
-
-/* .tool-logo img{
+.tool-logo img{
     width: 100px;
 }
 
@@ -172,60 +158,77 @@ img{
     border-radius: 50%;
 }
 
-.contact-info{
-    font-size: 1rem;
-}
 
-.content-group{
-    padding-top: 35px;
-}
-.section-title{
+.subtitle{
+    margin-top: 20px;
     text-align: center;
 }
 
-.experience-cards{
-    margin-top: 20px;;
+@media (max-width: 900px){
+    .tools-card img{
+        width: 80px;
+    }
+    .tools-card{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+.cards{
+    margin-top: 30px;;
     display: flex;
     justify-content: space-between;
 }
 
-.experience-cards p {
-    text-align: justify;
-    hyphens: auto;
-  }
-
-.col-exp{
+.card{
     width: 49%;
     display: flex;
     border-radius: 30px;
-    justify-content: space-between;
+    justify-content: left;
     background-color: #313338;
+    margin-bottom: 10px;
 }
 
-.exp-image{
+
+.cards p {
+    text-align: justify;
+  }
+
+
+.card-image{
     width: 200px;
     max-width: 200px;
     margin: auto;
 }
 
-.exp-image img{
+.card-image img{
     width: 100%;
     border-radius: 20px; 
 }
-.experience-cards .description{
+.cards .description{
     padding-left: 15px;
     padding-right: 15px;
 }
+
+@media (max-width: 900px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
 
 .description h2{
     padding-top: 20px;
 }
 
 .description .job-description{
-    padding-top: 20px;
-    height: 40%;
+    padding-top: 15px;
+    /* height: 40%; */
 }
 
 .description .period{
-    padding-top: 20px;
-} */
+    padding-top: 15px;
+}

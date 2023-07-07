@@ -3,7 +3,14 @@ html:root {
     font-size: 16px;
     --font-h2: 2rem;
     --font-hero-text: 1.4rem;
-    --min-width: 420px;
+
+    --fs-h2: 1.8rem;
+    --fs-hero-text: 1.3rem;
+
+    --fxs-h2: 1.1rem;
+    --fxs-hero-text: 1rem;
+
+    --min-width: 192px;
 }
 
 *{
@@ -75,7 +82,7 @@ img{
 .content-column-hero h2{
     margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: var(--font-h2);
 }
 
 .content-column-hero{
@@ -90,13 +97,13 @@ img{
     margin-bottom: 20px;
     margin-right: 25px;
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: var(--font-hero-text);
 }
 
 .info{
     display: flex;
     gap: 20px;
-    font-size: 1.4rem;
+    font-size: var(--font-hero-text);
 }
 
 .contact-info{
@@ -107,41 +114,6 @@ img{
     
 }
 
-@media (max-width: 1060px){
-    .container-hero{
-        flex-direction: column;
-    }
-    .photo-column-hero{
-        width: 100%;
-    }
-    .photo-column-hero .photo-container{
-        width: 190px;
-        margin: auto;
-    }
-    .content-column-hero{
-        width: 100%;
-    }
-    .content-column-hero h2{
-        text-align: center;
-        font-size: 1.8;
-    }
-    .content-text{
-        margin: 0px 10px 15px 10px;
-        font-size: 1.3rem;
-    }
-    .info{
-        justify-content: center;
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 590px){
-    .info{
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
 
 .tools-card{
     display: flex;
@@ -162,16 +134,6 @@ img{
 .subtitle{
     margin-top: 20px;
     text-align: center;
-}
-
-@media (max-width: 900px){
-    .tools-card img{
-        width: 80px;
-    }
-    .tools-card{
-        gap: 15px;
-        flex-wrap: wrap;
-    }
 }
 
 .cards{
@@ -206,22 +168,7 @@ img{
     border-radius: 20px; 
 }
 .cards .description{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-@media (max-width: 900px){
-    .cards{
-        flex-direction: column;
-    }
-    .card{
-        width: 100%;
-    }
-}
-
-
-.description h2{
-    padding-top: 20px;
+    padding: 20px 15px;
 }
 
 .description .job-description{
@@ -231,4 +178,98 @@ img{
 
 .description .period{
     padding-top: 15px;
+}
+
+
+@media (max-width: 1060px){
+    .container-hero{
+        flex-direction: column;
+    }
+    .photo-column-hero{
+        width: 100%;
+    }
+    .photo-column-hero .photo-container{
+        width: 190px;
+        margin: auto;
+    }
+    .content-column-hero{
+        width: 100%;
+    }
+    .content-column-hero h2{
+        text-align: center;
+        font-size: var(--fs-h2);
+    }
+    .content-text{
+        margin: 0px 10px 15px 10px;
+        font-size: var(--fs-hero-text);
+    }
+    .info{
+        justify-content: center;
+        font-size: var(--fs-hero-text);
+    }
+}
+
+@media (max-width: 900px){
+    .tool-logo img{
+        width: 80px;
+    }
+    .tools-card{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 590px){
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 420px){
+    .photo-column-hero .photo-container{
+        width: 150px;
+    }
+    .content-column-hero h2{
+        font-size: var(--fxs-h2);
+    }
+    .content-text{
+        font-size: var(--fxs-hero-text) ;
+    }
+    .info{
+        font-size: var(--fxs-hero-text);
+    }
+    .tool-logo img{
+        width: 60px;
+    }
+    .subtitle, .card h2{
+        font-size: var(--fxs-h2);
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card-image{
+        width: 150px;
+        padding: 10px 0px;
+    }
+    .card h2{
+        text-align: center;
+    }
+    .card .p{
+        font-size: var(--fxs-hero-text);
+    }
+    .card .description{
+        padding-top: 0px;
+    }
+    .contact-info{
+        word-break: break-word;
+    }
 }
